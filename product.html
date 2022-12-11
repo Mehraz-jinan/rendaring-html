@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        LetWear 
+    </title>
+    <!-- iccon link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <!-- font link -->
+    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
+                
+
+    <!-- bootstrap  link -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css.map">
+
+    <!-- app style link -->
+    <link rel="stylesheet" href="css/app.css" 
+    type="text/css">
+    <link rel="stylesheet" href="css/lightslider.css" type="text/css">
+
+</head>
+<body>
+    <section class="top-search-logo">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="banner-logo-search">
+                    <div class="logo">
+                        <a href="index.html">
+                            <h4>
+                               LetWear
+                                <sub>
+                                   Walk Comfortabely
+                                 </sub>
+                            </h4>
+                        </a>
+                        </div>
+                       
+        
+        <!-- Search Bar part Html -->
+                        <div class="search-bar">
+                            <form action="">
+                                <input class="form-control"type="text" placeholder="Search Here">
+                                <span class=" search-button material-symbols-outlined">
+                                    <button class="btn"> search </button>
+                                    </span>
+                               
+                            </form>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        
+    <section id="nav-part">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-8">
+                  <div class="main-nav">
+                     
+                      <!-- Main menu Html -->
+                      <div class="toggle-button d-md-none">
+                          <button id="toggle-icon" class="toggle-icon ">
+                              <i class="fa-solid fa-bars"></i>
+                          </button>
+                      </div>
+                      <div id="main-menu" class="menu">
+                          <a class="nav-link" href="index.html">home</a>
+                         <a class="nav-link" href="">about</a>
+                         <a class="nav-link" href="product.html">shoes</a>
+                         <a class="nav-link" href="product.html">bags</a>
+                         <a class="nav-link" href="product.html">belt</a>
+                      </div>
+    
+                  </div>
+              </div>
+              <div class="col-4">
+                  <div class="add-to-cart-sign">
+                      <div class="cart-setup">
+                        
+                                  <a href="cart.html" class="add-cart">
+                                    <i class="cart-button fa-solid fa-cart-shopping"></i>
+                                  </a>
+                                  <a href="wishlist.html" class="add-cart">
+                                    <i class="cart-button fa-regular fa-heart"></i>
+                                  </a>
+                                  <a href="auth.html" class="add-cart">
+                                    <i class="cart-button fa-sharp fa-regular fa-user"></i>
+                                  </a>
+                                  
+                                  
+                      </div>
+                      
+                  </div>
+              </div>
+          </div>
+      </div>
+    </section>
+    
+    <section id="show-product">
+        <div class="container g-0">
+            
+    
+            <div class="row">
+                        <div class="col-md-4">
+                            <div class="product-details">
+                                <div class="card-main">
+                                    <div class="card-img">
+                                        <img class="img-fluid" src="<%= product.productImage  %> " alt="product-img">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="product-name">
+                                            <p>
+                                                <b>
+                                                    <%= product.productName  %> 
+                                                </b>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    price:
+                                                    <%= product.productPrice  %>$
+                                                </b>
+                                            </p>
+                                            <p>
+                                               <b>User Experience:</b> Fully Comfortable
+                                            </p>
+                                            <p>
+                                               <b>Review:</b> 4.5/5
+                                            </p>
+                                        </div>
+                                        <div class="product-button">
+                                            <a href="product-details.html">View Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-none d-md-block">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-details">
+                                <div class="card-main">
+                                    <div class="card-img">
+                                        <img class="img-fluid" src="<%= product.productImage  %> " alt="product-img">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="product-name">
+                                            <p>
+                                                <b>
+                                                    <%= product.productName  %> 
+                                                </b>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    price:
+                                                    <%= product.productPrice  %>$
+                                                </b>
+                                            </p>
+                                            <p>
+                                               <b>User Experience:</b> Fully Comfortable
+                                            </p>
+                                            <p>
+                                               <b>Review:</b> 4.5/5
+                                            </p>
+                                        </div>
+                                        <div class="product-button">
+                                            <a href="product-details.html">View Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-none d-md-block">
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-details">
+                                <div class="card-main">
+                                    <div class="card-img">
+                                        <img class="img-fluid" src="<%= product.productImage  %> " alt="product-img">
+                                    </div>
+                                    <div class="card-details">
+                                        <div class="product-name">
+                                            <p>
+                                                <b>
+                                                    <%= product.productName  %> 
+                                                </b>
+                                            </p>
+                                            <p>
+                                                <b>
+                                                    price:
+                                                    <%= product.productPrice  %>$
+                                                </b>
+                                            </p>
+                                            <p>
+                                               <b>User Experience:</b> Fully Comfortable
+                                            </p>
+                                            <p>
+                                               <b>Review:</b> 4.5/5
+                                            </p>
+                                        </div>
+                                        <div class="product-button">
+                                            <a href="product-details.html">View Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="d-none d-md-block">
+                        </div>
+                         
+                
+            </div>
+            
+    
+            
+            
+            
+        </div>
+    </section>
+
+
+
+
+    <section id="footer">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="footer-1">
+                            <div class="content">
+                                <div class="logo">
+                                    <h4>
+                                       LetWear
+      
+                                    </h4>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde suscipit nobis eveniet rem quis consequuntur maiores sit, quae minus, obcaecati odio! Eius, minus. Eum, incidunt!
+                                </p>
+                                <p>
+                                    (+800) 1234 5678 90 – info@example.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-2">
+                            <div class="content-header">
+                            <b>Information</b>
+                        </div>
+                        <div class="footer-2-content">
+                            <ul>
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Return Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">Drop Shipping</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-2">
+                            <div class="content-header">
+                            <b>Account</b>
+                        </div>
+                        <div class="footer-2-content">
+                            <ul>
+                                <li>
+                                    <a href="#">Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Orders</a>
+                                </li>
+                                <li>
+                                    <a href="#">My Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="#">Account details</a>
+                                </li>
+                                <li>
+                                    <a href="#">Track My Order</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-2">
+                            <div class="content-header">
+                            <b>Shop</b>
+                        </div>
+                        <div class="footer-2-content">
+                            <ul>
+                                <li>
+                                    <a href="#">Affiliate</a>
+                                </li>
+                                <li>
+                                    <a href="#">BestSellers</a>
+                                </li>
+                                <li>
+                                    <a href="#">Discount</a>
+                                </li>
+                                <li>
+                                    <a href="#">Letest Products</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sell Products</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="footer-2">
+                            <div class="content-header">
+                            <b>Catagories</b>
+                        </div>
+                        <div class="footer-2-content">
+                            <ul>
+                                <li>
+                                    <a href="#">Shoes</a>
+                                </li>
+                                <li>
+                                    <a href="#">Belts</a>
+                                </li>
+                                <li>
+                                    <a href="#">Jackets</a>
+                                </li>
+                                <li>
+                                    <a href="#">Bags</a>
+                                </li>
+                                <li>
+                                    <a href="#">Gloves</a>
+                                </li>
+                            </ul>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer content ends -->
+            <!-- sub footer start -->
+            <div class="sub-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Copyright 2022 © All right reserved. Powered by LetWear.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+      </section>
+      
+      
+      
+          <!-- main javascript file -->
+          <script src="js/jquery-3.6.1.min.js"></script>
+          <script src="js/bootstrap.min.js"></script>
+          
+          <script src="js/bootstrap.js"></script>
+          <script src="js/bootstrap.min.js.map"></script>
+          <script src="js/lightslider.js"></script>
+          <script src="js/app.js"></script>
+          
+          <!-- bootstrap setup -->
+          
+      </body>
+      </html>
+      
