@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
-    <!-- font link -->
-    <link href="https://fonts.cdnfonts.com/css/futura-md-bt" rel="stylesheet">
+    <!-- font0 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;500;600;700&display=swap" rel="stylesheet">
                 
 
     <!-- bootstrap  link -->
@@ -114,7 +114,7 @@
                 <div class="col-lg-6">
                     <div class="product-view-img">
                         <div class="image-1">
-                            <img class="img-fluid" src="<%= findProduct.productImage  %> " alt="">
+                            <img class="img-fluid" src="/images/new-arrival/arrival-1.jpg " alt="">
                         </div>
                         <div class="row g-0">
                             <div class="col-md-4">
@@ -140,24 +140,24 @@
                         <div class="product-name">
                             <p>
                                 <b>
-                                    <%= findProduct.productName  %> 
+                                    Jacket 
                                 </b>
                             </p>
                             <p class="price">
                                 <b>
                                     price:
-                                    <%= findProduct.productPrice  %>$ 
+                                    50$ 
                                 </b>
                             </p>
                         </div>
                         <div class="product-details">
                             <p>
-                                <%= findProduct.productDescription  %> 
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur dolorum magnam doloremque consequatur nulla, deserunt aspernatur iure corrupti, hic at ipsum illum, atque reiciendis. Nemo quis, voluptatum cum nulla tenetur ratione suscipit voluptatibus tempore possimus magnam eius alias illo nostrum repudiandae doloribus maxime, non cumque voluptas, repellat similique facilis eligendi. 
                             </p>
                         </div>
                         <div class="product-availity">
                             <div class="available">
-                               <%= findProduct.productAvaility  %> 
+                               In-Stock 
                             </div>
                         </div>
                         <div class="product-color" id="color">
@@ -172,14 +172,14 @@
                             <div class="size-header">Choose Size:</div>
                             <select name="size" id="size">
                                 <option value="" selected>Choose Your size</option>
-                                <option value="<%= findProduct.productSize  %> " selected><%= findProduct.productSize  %></option>
-                                <option value="<%= findProduct.productSize  %>" selected><%= findProduct.productSize  %></option>
-                                <option value="<%= findProduct.productSize  %>" selected><%= findProduct.productSize  %></option>
+                                <option value="50" selected>50</option>
+                                <option value="40" selected>40</option>
+                                <option value="30" selected>30</option>
                             </select>
                         </div>
                         <div class="action-button">
                             <a href="cart.html">Add to cart</a>
-                            <a href="/product/wishlist">Add to Wishlist</a>
+                            <a href="wishlist.html">Add to Wishlist</a>
                         </div>
                     </div>
                 </div>

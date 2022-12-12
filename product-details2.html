@@ -27,6 +27,7 @@
 
 </head>
 <body>
+
     <section class="top-search-logo">
         <div class="container-fluid">
             <div class="row">
@@ -106,126 +107,85 @@
       </div>
     </section>
     
-    <section id="show-product">
-        <div class="container g-0">
-            
-    
-            <div class="row">
-                        <div class="col-md-4">
-                            <div class="product-details">
-                                <div class="card-main">
-                                    <div class="card-img">
-                                        <img class="img-fluid" src="/images/new-arrival/arrival-1.jpg" alt="product-img">
-                                    </div>
-                                    <div class="card-details">
-                                        <div class="product-name">
-                                            <p>
-                                                <b>
-                                                    Jacket
-                                                </b>
-                                            </p>
-                                            <p>
-                                                <b>
-                                                    price:
-                                                    50$
-                                                </b>
-                                            </p>
-                                            <p>
-                                               <b>User Experience:</b> Fully Comfortable
-                                            </p>
-                                            <p>
-                                               <b>Review:</b> 4.5/5
-                                            </p>
-                                        </div>
-                                        <div class="product-button">
-                                            <a href="product-details.html">View Product</a>
-                                        </div>
-                                    </div>
+
+    <section id="view-product">
+        <div class="container-fluid">
+            <div class="row g-0">
+                <div class="col-lg-6">
+                    <div class="product-view-img">
+                        <div class="image-1">
+                            <img class="img-fluid" src="/images/new-arrival/arrival-2.jpg " alt="">
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <div class="sub-image">
+                                    <img class="img-fluid" src="/images/new-arrival/arrival-2.jpg" alt="">
                                 </div>
                             </div>
-                            <hr class="d-none d-md-block">
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product-details">
-                                <div class="card-main">
-                                    <div class="card-img">
-                                        <img class="img-fluid" src="/images/new-arrival/arrival-2.jpg " alt="product-img">
-                                    </div>
-                                    <div class="card-details">
-                                        <div class="product-name">
-                                            <p>
-                                                <b>
-                                                    Shoe 
-                                                </b>
-                                            </p>
-                                            <p>
-                                                <b>
-                                                    price:
-                                                    110$
-                                                </b>
-                                            </p>
-                                            <p>
-                                               <b>User Experience:</b> Fully Comfortable
-                                            </p>
-                                            <p>
-                                               <b>Review:</b> 4.5/5
-                                            </p>
-                                        </div>
-                                        <div class="product-button">
-                                            <a href="product-details2.html">View Product</a>
-                                        </div>
-                                    </div>
+                            <div class="col-md-4">
+                                <div class="sub-image">
+                                    <img class="img-fluid" src="/images/new-arrival/arrival-3.jpg" alt="">
                                 </div>
                             </div>
-                            <hr class="d-none d-md-block">
-                        </div>
-                        <div class="col-md-4">
-                            <div class="product-details">
-                                <div class="card-main">
-                                    <div class="card-img">
-                                        <img class="img-fluid" src="/images/new-arrival/arrival-3.jpg " alt="product-img">
-                                    </div>
-                                    <div class="card-details">
-                                        <div class="product-name">
-                                            <p>
-                                                <b>
-                                                    Bag 
-                                                </b>
-                                            </p>
-                                            <p>
-                                                <b>
-                                                    price:
-                                                    36$
-                                                </b>
-                                            </p>
-                                            <p>
-                                               <b>User Experience:</b> Fully Comfortable
-                                            </p>
-                                            <p>
-                                               <b>Review:</b> 4.5/5
-                                            </p>
-                                        </div>
-                                        <div class="product-button">
-                                            <a href="product-details3.html">View Product</a>
-                                        </div>
-                                    </div>
+                            <div class="col-md-4">
+                                <div class="sub-image">
+                                    <img class="img-fluid" src="/images/new-arrival/arrival-4.jpg" alt="">
                                 </div>
                             </div>
-                            <hr class="d-none d-md-block">
                         </div>
-                         
-                
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-view-details">
+                        <div class="product-name">
+                            <p>
+                                <b>
+                                    <%= findProduct.productName  %> 
+                                </b>
+                            </p>
+                            <p class="price">
+                                <b>
+                                    price:
+                                    <%= findProduct.productPrice  %>$ 
+                                </b>
+                            </p>
+                        </div>
+                        <div class="product-details">
+                            <p>
+                                <%= findProduct.productDescription  %> 
+                            </p>
+                        </div>
+                        <div class="product-availity">
+                            <div class="available">
+                               <%= findProduct.productAvaility  %> 
+                            </div>
+                        </div>
+                        <div class="product-color" id="color">
+                            <div class="red"></div>
+                            <div class="green"></div>
+                            <div class="yellow"></div>
+                            <div class="violet"></div>
+                            <div class="purple"></div>
+                            <div class="blue"></div>
+                        </div>
+                        <div class="sizes">
+                            <div class="size-header">Choose Size:</div>
+                            <select name="size" id="size">
+                                <option value="" selected>Choose Your size</option>
+                                <option value="<%= findProduct.productSize  %> " selected><%= findProduct.productSize  %></option>
+                                <option value="<%= findProduct.productSize  %>" selected><%= findProduct.productSize  %></option>
+                                <option value="<%= findProduct.productSize  %>" selected><%= findProduct.productSize  %></option>
+                            </select>
+                        </div>
+                        <div class="action-button">
+                            <a href="cart.html">Add to cart</a>
+                            <a href="/product/wishlist">Add to Wishlist</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-    
-            
-            
-            
         </div>
-    </section>
-
-
-
+    </section> 
 
     <section id="footer">
         <footer>
@@ -384,4 +344,3 @@
           
       </body>
       </html>
-      
